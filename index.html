@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Новичок — удержание новых сотрудников</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top__inner">
+      <div class="brand">
+        <span class="brand__name">Новичок</span>
+        <span class="brand__sub">первые 90 дней · демо</span>
+      </div>
+      <nav class="roles" role="tablist" aria-label="Роль">
+        <button type="button" role="tab" data-action="role" data-role="newbie">Новичок</button>
+        <button type="button" role="tab" data-action="role" data-role="manager">Руководитель</button>
+        <button type="button" role="tab" data-action="role" data-role="hr">HR</button>
+      </nav>
+      <button type="button" class="btn btn--ghost btn--sm reset" data-action="reset">Сбросить демо</button>
+    </div>
+  </header>
+
+  <main id="app" class="container" aria-live="polite"></main>
+
+  <footer class="container foot">
+    <span id="demo-date"></span> · Данные выдуманные. Битрикс24 — имитация, запросы никуда не отправляются.
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
